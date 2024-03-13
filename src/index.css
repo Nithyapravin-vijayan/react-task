@@ -1,0 +1,73 @@
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5DEB3; /* Very light gray color */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 2%;
+  width: 46%;
+  padding: 2%;
+  text-align: center;
+}
+
+.chart-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.table-container {
+  margin: 2%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #E3D2E3; /* Light Sandal color */
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 14px; /* Adjust the font size as needed */
+}
+
+th, td {
+  padding: 8px; /* Adjust the cell padding as needed */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+td:hover {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+  transition: transform 0.2s ease-in-out;
+  background-color: #978597; /* Darker color on hover, adjust as needed */
+}
+
+.table-container {
+  margin-bottom: 20px; /* Adjust the margin-bottom as needed to create space below the table */
+}
+
+/* Example: Responsive design for small screens */
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  table {
+    margin-top: 10px;
+  }
+}
